@@ -23,5 +23,21 @@
     "type": "git",
     "url": "https://github.com/q2560080107/agent-route-hot-refresher.git"
   },
-  "author": "风花雪月"
+  "author": "风花雪月",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "subagent",
+    "model-routing",
+    "hot-reload",
+    "hot-refresh",
+    "model-selection",
+    "agent",
+    "session",
+    "llm",
+    "路由热刷新",
+    "子智能体"
+  ]
 }

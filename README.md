@@ -233,6 +233,14 @@ bundle/用户补丁中的**新条目必须用 `- insert:` 包裹**，裸行列�
 4. 显示名与介绍由包内 locale/zh.json、locale/en.json 与 icon.svg 提供，
    对方界面会显示「Agent 路由热刷新器」与中文介绍。
 
+
+## 关键词（搜索用）
+
+DeepSeek Harness 插件 / DSH 插件 / 子智能体模型路由 / 子代理模型 / 模型选择热刷新 /
+热生效 / 免重启 / agent subagent model routing hot reload / dsh-plugin /
+session allowed models hot refresh / Agent 路由热刷新器 / subagent model selection /
+list_subagent_models / 委派子智能体 / 模型目录热更新
+
 ## 安全说明
 
 - 不读取、不记录任何 API Key / Authorization / Cookie / 提示词；
