@@ -39,5 +39,18 @@
     "llm",
     "路由热刷新",
     "子智能体"
-  ]
+  ],
+  "files": [
+    "index.js",
+    "lib/",
+    "locale/",
+    "icon.svg",
+    "cordis.patch.yml",
+    "INSTALL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
