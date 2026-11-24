@@ -1,11 +1,12 @@
 {
   "name": "dsh-hot-routes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hot-refresh the allowed subagent model routes of running Sessions on settings save (no restart, no new Session). / 保存子智能体模型设置后，正在运行的会话立即热刷新可用路由。",
   "type": "module",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
+    "./client": "./client.js",
     "./package.json": "./package.json",
     "./locale/*.json": "./locale/*.json"
   },
@@ -16,6 +17,9 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
     }
   },
   "icon": "icon.svg",
@@ -42,6 +46,7 @@
   ],
   "files": [
     "index.js",
+    "client.js",
     "lib/",
     "locale/",
     "icon.svg",
