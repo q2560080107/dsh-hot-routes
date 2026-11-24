@@ -1,5 +1,8 @@
 # 「Agent 路由热刷新器」安装指南
 
+> ⚠️ **安装后必须重启一次 Harness（菜单「重启应用与 Host」），否则插件不会生效。**
+> 这是插件安装本身需要的一次重启；重启之后，模型设置的改动就再也不需要重启了。
+
 > 适用版本：DeepSeek Harness 桌面版（DSH 0.2.2 系列）
 > 支持平台：Windows / macOS / Linux（纯 JavaScript，无平台限制）
 > 插件包：dsh-hot-routes-1.0.0.zip

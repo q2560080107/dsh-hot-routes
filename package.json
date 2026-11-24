@@ -1,6 +1,6 @@
 {
   "name": "dsh-hot-routes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hot-refresh the allowed subagent model routes of running Sessions on settings save (no restart, no new Session). / 保存子智能体模型设置后，正在运行的会话立即热刷新可用路由。",
   "type": "module",
   "main": "index.js",
