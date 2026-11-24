@@ -81,7 +81,7 @@ After that, model-setting changes hot-apply forever.
 | `lib/policy.js` | 设置读取与策略校验（纯函数） |
 | `lib/state.js` | catalogVersion/sessionRouteVersion/stale 持久化（JSON 原子写） |
 | `lib/util.js` | withTimeout / safeError / deepFreeze |
-| `forge/forge-host-code.js` | Forge 动态 Host 半区单文件（沙箱兼容：无 fs/setTimeout，用 ctx.timeout；状态驻内存） |
+
 | `tests/hot-refresher.test.mjs` | 10 项场景测试（T1–T10） |
 | `tests/forge-smoke.test.mjs` | Forge 变体 smoke（F1–F3） |
 | `tests/helpers.mjs` | 夹具：镜像真实投影注册表语义的 FixtureRegistry/FixtureSession/mock ctx |
@@ -123,7 +123,6 @@ After that, model-setting changes hot-apply forever.
 ### A. Forge 动态 Host 半区（推荐：运行中热加载）
 
 1. GUI → 创造模式 → Cordis/插件运行面板 → 新建插件（Host 半区）；
-2. 粘贴 `forge/forge-host-code.js` 的全部内容；
 3. 定义并运行（host-only 包无需审批，立即在 host 组合上激活，
    完整访问 settings/sessions/sessionProjections/llm）；
 4. 激活后按「UI 手动验证步骤」验证。
