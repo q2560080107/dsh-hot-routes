@@ -2,7 +2,7 @@
 
 > 适用版本：DeepSeek Harness 桌面版（DSH 0.2.2 系列）
 > 支持平台：Windows / macOS / Linux（纯 JavaScript，无平台限制）
-> 插件包：agent-route-hot-refresher-1.0.0.zip
+> 插件包：dsh-hot-routes-1.0.0.zip
 
 ## 它解决什么问题
 
@@ -19,7 +19,7 @@
 
 1. 打开 Harness → 插件界面 → 点「添加插件」；
 2. 输入本 zip 解压后的目录（或 zip 文件本身）的**绝对路径**，
-   例如：`C:\Users\你的用户名\Downloads\agent-route-hot-refresher`
+   例如：`C:\Users\你的用户名\Downloads\dsh-hot-routes`
    （插件管理器支持本地路径 / 文件链接 / tarball / git 地址等多种来源）；
 3. 确认安装 → 管理器自动完成依赖链接与启用；
 4. 按界面引导**重启一次应用与 Host**（菜单「重启应用与 Host」）。
@@ -52,10 +52,10 @@
 
 ## 安装来源（任选其一）
 
-- **GitHub 仓库**（推荐）：在「添加插件」输入 `https://github.com/q2560080107/agent-route-hot-refresher`
+- **GitHub 仓库**（推荐）：在「添加插件」输入 `https://github.com/q2560080107/dsh-hot-routes`
   （可追加 `#v1.0.1` 形式的 tag 固定版本；发布新 tag 后，重新安装新 tag 即可更新）；
 - **本地目录**：解压本 zip，输入解压目录的绝对路径；
-- **npm 包名**：公开发布到 npm 后，输入 `agent-route-hot-refresher`。
+- **npm 包名**：公开发布到 npm 后，输入 `dsh-hot-routes`。
 
 ## 更新
 
@@ -65,7 +65,7 @@
 
 ## 反馈与支持
 
-本项目以 MIT 许可开源，仓库：`https://github.com/q2560080107/agent-route-hot-refresher`
+本项目以 MIT 许可开源，仓库：`https://github.com/q2560080107/dsh-hot-routes`
 使用问题、功能建议请提 Issue；联系作者：QQ 2560080107
 
 ## 常见问题

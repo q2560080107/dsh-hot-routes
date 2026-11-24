@@ -1,0 +1,6 @@
+url: https://github.com/q2560080107/dsh-hot-routes
+name: q2560080107/dsh-hot-routes
+category: model
+description:
+  en: "Hot-refreshes the allowed child-agent model routes of every running Session when the subagent model selection is saved, without a Harness restart or a new Session. Emits agent-model-catalog-changed, keeps catalogVersion and per-session sessionRouteVersion, single-flights provider catalog queries with a timeout, and retains the old routes with a stale mark when a refresh fails."
+  zh: "保存子智能体模型设置后，正在运行的会话立即热刷新可委派的子模型路由——无需重启 Harness、无需新建会话。含 agent-model-catalog-changed 事件、catalogVersion 与按会话的 sessionRouteVersion、provider 目录查询超时与单飞、刷新失败保留旧路由并标记 stale。"

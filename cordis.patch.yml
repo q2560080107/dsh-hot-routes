@@ -1,7 +1,7 @@
-# Agent 路由热刷新器 bundle 层（随包安装自动启用）
+# dsh-hot-routes bundle 层（随包安装自动启用）
 - insert:
-    - id: agent-route-hot-refresher
-      name: agent-route-hot-refresher
+    - id: dsh-hot-routes
+      name: dsh-hot-routes
       config:
         providerTimeoutMs: 8000
         debounceMs: 300

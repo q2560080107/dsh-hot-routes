@@ -1,4 +1,4 @@
-# Agent 路由热刷新器（agent-route-hot-refresher）
+# Agent 路由热刷新器（dsh-hot-routes）
 
 > 开源许可：MIT ｜ 支持平台：Windows / macOS / Linux ｜ 中文安装指南：[INSTALL.md](./INSTALL.md)
 
@@ -14,7 +14,7 @@ each Session's `subagent/model-selection-policy` projection; keeps old routes
 and marks `stale` when a refresh fails; forged provider/model strings are
 rejected by the same validation strength as the framework.
 
-Install: plugin manager → Add plugin → `https://github.com/q2560080107/agent-route-hot-refresher` (or a local path), then restart the Host once as guided.
+Install: plugin manager → Add plugin → `https://github.com/q2560080107/dsh-hot-routes` (or a local path), then restart the Host once as guided.
 After that, model-setting changes hot-apply forever.
 
 > 面向最终用户的安装与验证说明见 [INSTALL.md](./INSTALL.md)；本文面向开发者/维护者。
@@ -72,7 +72,7 @@ After that, model-setting changes hot-apply forever.
 
 ## 文件清单
 
-（均位于 `C:\Users\XQW\.dsh\profiles\desktop\plugins\agent-route-hot-refresher\`）
+（均位于 `C:\Users\XQW\.dsh\profiles\desktop\plugins\dsh-hot-routes\`）
 
 | 文件 | 作用 |
 | --- | --- |
@@ -135,17 +135,17 @@ catalogVersion 从 0 重新计数——语义正确，只是不跨重启持久�
 
 1. 把 `cordis.patch.yml.arhr-backup` 之前的内容追加一条：
    ```yaml
-   - id: agent-route-hot-refresher
-     name: agent-route-hot-refresher
+   - id: dsh-hot-routes
+     name: dsh-hot-routes
      config:
        providerTimeoutMs: 8000
        debounceMs: 300
    ```
    并在 `profiles/desktop/node_modules/` 下建 junction
-   `agent-route-hot-refresher` → `../plugins/agent-route-hot-refresher`；
+   `dsh-hot-routes` → `../plugins/dsh-hot-routes`；
 2. 当前桌面构建对 profile 变更会触发 **host 子进程重启**（有活跃会话时被推迟），
    重启后条目生效；状态持久化于
-   `plugins/agent-route-hot-refresher/state/agent-route-hot-refresher.json`。
+   `plugins/dsh-hot-routes/state/dsh-hot-routes.json`。
    **注意：在当前桌面构建上，该方式不能做到“不重启”**，热刷新能力的
    在线验收请使用方式 A。
 
@@ -187,11 +187,11 @@ PASS F1 .. PASS F3
 ## 回滚步骤
 
 - 方式 A：面板中停止/删除该动态插件即可（立即生效）。
-- 方式 B：删除 `cordis.patch.yml` 中的 `agent-route-hot-refresher` 条目与
-  `node_modules\agent-route-hot-refresher` junction（可用
+- 方式 B：删除 `cordis.patch.yml` 中的 `dsh-hot-routes` 条目与
+  `node_modules\dsh-hot-routes` junction（可用
   `cordis.patch.yml.arhr-backup` 一键还原）；随后 host 重启即回到原状。
 - 测试产生的临时状态文件：删除
-  `plugins/agent-route-hot-refresher/state/` 整个目录即可。
+  `plugins/dsh-hot-routes/state/` 整个目录即可。
 
 ## 部署关键教训（务必遵守）
 
@@ -201,8 +201,8 @@ bundle/用户补丁中的**新条目必须用 `- insert:` 包裹**，裸行列�
 
 ```yaml
 - insert:
-    - id: agent-route-hot-refresher
-      name: agent-route-hot-refresher
+    - id: dsh-hot-routes
+      name: dsh-hot-routes
       config:
         providerTimeoutMs: 8000
         debounceMs: 300
@@ -226,7 +226,7 @@ bundle/用户补丁中的**新条目必须用 `- insert:` 包裹**，裸行列�
 
 ## 分享给他人
 
-1. 打包：\`tar -czf agent-route-hot-refresher-1.0.0.tgz agent-route-hot-refresher\`（不含 state/ 与临时文件）；
+1. 打包：\`tar -czf dsh-hot-routes-1.0.0.tgz dsh-hot-routes\`（不含 state/ 与临时文件）；
 2. 对方：插件界面 →「添加插件」→ 输入 tarball 的绝对路径或 URL → 安装；
    （插件管理器支持本地路径/文件链接/git/tarball 多种来源）
 3. 安装完成后按其引导重启一次 host，之后模型设置改动即时热生效；

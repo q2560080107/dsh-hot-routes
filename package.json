@@ -1,5 +1,5 @@
 {
-  "name": "agent-route-hot-refresher",
+  "name": "dsh-hot-routes",
   "version": "1.0.0",
   "description": "Hot-refresh the allowed subagent model routes of running Sessions on settings save (no restart, no new Session). / 保存子智能体模型设置后，正在运行的会话立即热刷新可用路由。",
   "type": "module",
@@ -21,7 +21,7 @@
   "icon": "icon.svg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/q2560080107/agent-route-hot-refresher.git"
+    "url": "https://github.com/q2560080107/dsh-hot-routes.git"
   },
   "author": "风花雪月",
   "keywords": [
