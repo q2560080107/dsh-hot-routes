@@ -14,7 +14,7 @@ each Session's `subagent/model-selection-policy` projection; keeps old routes
 and marks `stale` when a refresh fails; forged provider/model strings are
 rejected by the same validation strength as the framework.
 
-Install: plugin manager → Add plugin → `https://github.com/<你的用户名>/agent-route-hot-refresher` (or a local path), then restart the Host once as guided.
+Install: plugin manager → Add plugin → `https://github.com/q2560080107/agent-route-hot-refresher` (or a local path), then restart the Host once as guided.
 After that, model-setting changes hot-apply forever.
 
 > 面向最终用户的安装与验证说明见 [INSTALL.md](./INSTALL.md)；本文面向开发者/维护者。

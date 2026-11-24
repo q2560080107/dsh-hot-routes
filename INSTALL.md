@@ -52,7 +52,7 @@
 
 ## 安装来源（任选其一）
 
-- **GitHub 仓库**（推荐）：在「添加插件」输入 `https://github.com/<你的用户名>/agent-route-hot-refresher`
+- **GitHub 仓库**（推荐）：在「添加插件」输入 `https://github.com/q2560080107/agent-route-hot-refresher`
   （可追加 `#v1.0.1` 形式的 tag 固定版本；发布新 tag 后，重新安装新 tag 即可更新）；
 - **本地目录**：解压本 zip，输入解压目录的绝对路径；
 - **npm 包名**：公开发布到 npm 后，输入 `agent-route-hot-refresher`。
@@ -65,8 +65,8 @@
 
 ## 反馈与支持
 
-本项目以 MIT 许可开源，仓库：`https://github.com/<你的用户名>/agent-route-hot-refresher`
-使用问题、功能建议请提 Issue；联系作者：<在此填写你的邮箱/主页>
+本项目以 MIT 许可开源，仓库：`https://github.com/q2560080107/agent-route-hot-refresher`
+使用问题、功能建议请提 Issue；联系作者：QQ 2560080107
 
 ## 常见问题
 
