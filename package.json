@@ -1,0 +1,27 @@
+{
+  "name": "agent-route-hot-refresher",
+  "version": "1.0.0",
+  "description": "Hot-refresh the allowed subagent model routes of running Sessions on settings save (no restart, no new Session). / 保存子智能体模型设置后，正在运行的会话立即热刷新可用路由。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "icon": "icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<你的用户名>/agent-route-hot-refresher.git"
+  },
+  "author": "<你的名字/昵称>"
+}

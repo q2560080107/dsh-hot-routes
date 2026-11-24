@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Route Hot Refresher",
+    "description": "Hot-refreshes the allowed child-agent model routes of every running Session the moment you save the subagent model selection in Settings — no Harness restart, no new Session. Includes agent-model-catalog-changed events, catalogVersion/sessionRouteVersion bookkeeping, single-flight provider queries with timeouts, atomic route swaps, and stale-safe fallbacks."
+  }
+}

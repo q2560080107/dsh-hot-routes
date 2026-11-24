@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent 路由热刷新器",
+    "description": "在“设置 → 子智能体”中新增/勾选/取消勾选子智能体模型并保存后，所有正在运行的会话立即生效：无需重启 Harness、无需新建会话即可用新模型委派子智能体。提供 agent-model-catalog-changed 事件、catalogVersion/sessionRouteVersion 版本追踪、provider 目录超时/单飞/并发锁重读、会话路由原子替换，刷新失败自动保留旧路由并标记 stale。"
+  }
+}

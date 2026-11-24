@@ -1,0 +1,5 @@
+state/
+node_modules/
+*.zip
+*.tgz
+*.tmp
